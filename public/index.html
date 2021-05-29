@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>@Nitin Bhandari</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,900;1,700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous" />
+
+  <link rel="stylesheet" href="../styles/style.css" />
+</head>
+
+<body>
+  <header id="header">
+    <div class="background">
+      <div class="container">
+        <div class="header--info">
+          <span class="header--info-1">Hi I'm a <span id="header--info-1__dev">developer</span>
+          </span>
+          <span class="header--info-2">& I love technology.</span>
+          <a href="#aboutMe"><i class="fas fa-chevron-down fa-2x header--downIcon"
+              style="color: rgba(255, 255, 255, 0.7)"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+
+      <nav class="nav--bar navbar navbar-expand-sm">
+        <i class="fab fa-nimblr fa-2x" style="margin-right: 10px; color: rgb(0, 0, 0)"></i>
+        <hr />
+        <div class="header--title">
+          <span>nitin bhandari</span>
+        </div>
+        <hr />
+
+        <div class="header--navigation">
+          <ul>
+            <li>
+              <a href="#aboutMe">ABOUT</a>
+            </li>
+            <li>
+              <a href="#projects">PROJECTS</a>
+            </li>
+            <li>
+              <a href="#contact">CONTACT</a>
+            </li>
+          </ul>
+        </div>
+        <hr />
+      </nav>
+
+    </div>
+  </header>
+
+  <section class="description description--col" id="aboutMe">
+    <h2>ABOUT ME</h2>
+    <div class="container">
+      <div class="row">
+        <div class="col description--container__about">
+          <p>
+            I'm a final year Btech student at CGC Landran. I hail from
+            Uttrakhand but was raised and lives in Gurugram.I love binge
+            watching animes and hitting the gym 5 days a week.
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg ">
+          <svg class="bd-placeholder-img rounded-circle" style="margin: 50 0;" width="140" height="140"
+            xmlns="http://www.w3.org/2000/svg" role="img" preserveAspectRatio="xMidYMid slice" focusable="false">
+            <title>Placeholder</title>
+            <rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777"
+              dy=".3em">140x140</text>
+          </svg>
+          <h4>Software Developer</h4>
+          <h5>Persistent Systems</h5>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg">
+          <a href="#projects"><i class="fas fa-chevron-down fa-2x " style="color: rgba(3, 0, 0, 0.7)"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="Projects" id="projects">
+    <div class="album py-5 bg-light">
+      <div class="container">
+
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="https://source.unsplash.com/1600x900/?text,code" alt="" width="100%" height="300">
+
+              <div class="card-body">
+                <p class="card-text text-muted"> APIs Used :<br />
+                  1. OpenCV <br />2. Tess4j (Java Wrapper of Tesseract OCR)
+                  <br />3. PDFbox<br />
+                  4. Webcam Capture<br />
+                  What it does ? A GUI Java application with 2 motives- <br />1.
+                  Access Webcam and convert the image captured by it into text.
+                  <br />2. Allows importing pdf files from your PC and then
+                  extract text from it.<br />
+                  How is it useful? <br /> Copy whatever text from your Mobile
+                  Phone browser into clipboard of your PC.<br />
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">
+                      <a href="https://github.com/oopsv2/X_Tractor"
+                        style="text-decoration: none; color: black;">View</a> </button>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="https://source.unsplash.com/1600x900/?typing,keyboards" alt="" width="100%" height="300">
+
+              <div class="card-body">
+                <p class="card-text text-muted">
+                  As the name suggests it's a typing practise application developed in
+                  java using JavaSwings. A GUI always gives better experience, so the
+                  whole project is GUI.</p>
+                <h6>Features :</h6>
+                <p class="text-muted">1. Scores saved in the Database.<br> 2.. Admin Control to remove
+                  redundancy in the database and store only the maximum score of each
+                  player. <br>3. Admin Control to add new data every time to improve the
+                  content that will be presented to the player to write.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary"><a
+                        href="https://github.com/oopsv2/TYPO_SkipErrors"
+                        style="text-decoration: none;color: black;">View</a>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="https://source.unsplash.com/1600x900/?planets" alt="" width="100%" height="300">
+              <div class="card-body">
+                <p class="card-text text-muted"> Ever wondered what Mars Looks like. Wouldn't it be good to have a
+                  handy application to get Images directly from NASA. NASAv1 might be
+                  worth looking at.</p>
+                <h6>Features :</h6>
+                <p class="text-muted">
+                  1. NASA regularly posts APOD and you can see them daily.<br>2. Explore Mars with the vision of the 3
+                  Rovers sent by NASA ( Opportunity, Curiosity, Spirit ). <br>3.
+                  NASA's API provide general public and developers to access their
+                  resources and databases.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary"><a
+                        href="https://github.com/oopsv2/NASAv1" style="text-decoration: none; color: black;">View</a>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container" style="text-align: center;">
+        <div class="row">
+          <div class="col-lg">
+            <a href="#contact"><i class="fas fa-chevron-down fa-7x " style="color: rgba(3, 0, 0, 0.7)"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="col contactCol">
+          <h2>Contact Me</h2>
+          <h5>Feel free to get in touch. Cheers!</h5>
+          <br />
+
+        </div>
+      </div>
+      <div class="row">
+        <div class="col contactCol">
+          <h3>RESUME</h3>
+          <a class="btn btn-outline-success" target="_blank" href="/Files/Nitin_CSE_SDE.pdf">Click Here!</a>
+        </div>
+        <div class="col contactCol">
+          <h3>EMAIL</h3>
+          <a class="btn btn-outline-success" target="_blank"
+            href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJvmZvhMFxPlTdbLfCbKphWmZmncQgtGhQKRZBXVkHpJSBjdvCnCNsSGKfWkQCFkLKlbMbB">nitinbhandari35@gmail.com</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer bd-footer py-3 mt-5 bg-light">
+    <div class="container">
+      <div class="row">
+        <div class="col footerCol">
+          <a target="_blank" href="https://www.linkedin.com/in/nitin-bhandari-06b008154/"><i
+              class="fab fa-linkedin fa-2x"></i></a>
+          <p>
+            <a href="#header">Back to TOP</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>
