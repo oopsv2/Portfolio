@@ -87,7 +87,6 @@ header {
 }
 .header--navigation {
   font-size: 1rem;
-
   font-weight: 600;
   float: right;
 }
@@ -98,12 +97,17 @@ header {
 .header--navigation ul li {
   margin: 0.3rem 1.1rem;
 }
-.header--navigation ul li a {
-  letter-spacing: 0.1rem;
+.header--navigation__a {
+  color: rgb(102, 102, 102);
   text-decoration: none;
-  color: black;
+  font-weight: 600;
 }
 
+.header--navigation__a:hover {
+  letter-spacing: 0.1rem;
+  color: black;
+  transition: ease-in;
+}
 .header--info {
   width: 100%;
   height: 50%;
@@ -167,6 +171,7 @@ header {
 .Projects {
   margin: 4rem 0;
 }
+
 .contactCol {
   text-align: center;
   margin: 1.2rem 0;
