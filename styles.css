@@ -106,15 +106,23 @@
     margin: 0 5px !important;
   }
   .outer-wrapper .inner-wrapper .section1 .navbar .container ul li a {
-    font-size: 1.2rem;
+    font-size: 1rem;
+  }
+  .outer-wrapper .inner-wrapper .section1 .navbar::after {
+    left: 45% !important;
   }
   .outer-wrapper .inner-wrapper .section1 .description {
+    width: 70% !important;
     top: 50% !important;
     left: 50% !important;
     transform: translate(-50%, -50%);
   }
   .outer-wrapper .inner-wrapper .section1 .description .header--info {
     text-align: center !important;
+  }
+  .outer-wrapper .inner-wrapper .section1 .description .header--info .header--info-1,
+.outer-wrapper .inner-wrapper .section1 .description .header--info .header--info-2 {
+    font-size: 1.5rem !important;
   }
   .outer-wrapper .inner-wrapper .section2 .container {
     max-width: 100% !important;
@@ -200,8 +208,23 @@
   -webkit-animation: bounceDown 1s 1;
           animation: bounceDown 1s 1;
 }
+.outer-wrapper .inner-wrapper .section1 .navbar::after {
+  content: "";
+  background-image: url(/Files/volleyball.png);
+  background-size: cover;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  bottom: -50px;
+  left: 55%;
+  transition: ease-in-out 0.7s;
+}
 .outer-wrapper .inner-wrapper .section1 .navbar:hover {
   transform: rotate(0deg);
+}
+.outer-wrapper .inner-wrapper .section1 .navbar:hover::after {
+  left: 48%;
+  transform: rotate(-180deg);
 }
 .outer-wrapper .inner-wrapper .section1 .navbar .icon {
   margin: 0 20px 0 20px;
@@ -229,6 +252,14 @@
   text-decoration: none;
   color: black;
 }
+.outer-wrapper .inner-wrapper .section1 .navbar .download {
+  width: 100%;
+  margin-right: 5%;
+  text-align: right;
+}
+.outer-wrapper .inner-wrapper .section1 .navbar .download a {
+  color: black;
+}
 .outer-wrapper .inner-wrapper .section1 .description {
   width: 50%;
   position: absolute;
@@ -237,7 +268,7 @@
 }
 .outer-wrapper .inner-wrapper .section1 .description .header--info {
   text-transform: uppercase;
-  font-size: 2.3rem;
+  font-size: 2.8rem;
   font-weight: 900;
   color: rgba(0, 0, 0, 0.652);
   letter-spacing: 0.7rem;
@@ -260,6 +291,15 @@
   font-size: 4rem;
   -webkit-animation-fill-mode: backwards;
           animation-fill-mode: backwards;
+}
+.outer-wrapper .inner-wrapper .section1 .ball {
+  background-image: url("/Files/volleyball.png");
+  background-size: cover;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 10%;
+  left: 34%;
 }
 .outer-wrapper .inner-wrapper .section2 {
   height: 100%;
