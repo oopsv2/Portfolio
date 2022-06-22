@@ -52,6 +52,7 @@
     .inner-wrapper {
       .section1 {
         .navbar {
+          transform: rotate(0deg) !important;
           .icon {
             margin: 0 5px !important;
           }
@@ -61,6 +62,14 @@
           margin: 0 5px !important;
           .container ul li a {
             font-size: 1.2rem;
+          }
+        }
+        .description {
+          top: 50% !important;
+          left: 50% !important;
+          transform: translate(-50%, -50%);
+          .header--info {
+            text-align: center !important;
           }
         }
       }

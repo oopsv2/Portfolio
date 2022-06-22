@@ -96,6 +96,7 @@
   }
 
   .outer-wrapper .inner-wrapper .section1 .navbar {
+    transform: rotate(0deg) !important;
     width: 95% !important;
     border-radius: 0 !important;
     align-items: center !important;
@@ -106,6 +107,14 @@
   }
   .outer-wrapper .inner-wrapper .section1 .navbar .container ul li a {
     font-size: 1.2rem;
+  }
+  .outer-wrapper .inner-wrapper .section1 .description {
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%);
+  }
+  .outer-wrapper .inner-wrapper .section1 .description .header--info {
+    text-align: center !important;
   }
   .outer-wrapper .inner-wrapper .section2 .container {
     max-width: 100% !important;
