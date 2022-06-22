@@ -518,13 +518,12 @@
 .outer-wrapper .inner-wrapper .section4 .contact .container .handles.github a:visited {
   color: rgb(22, 22, 22);
 }
-.outer-wrapper .inner-wrapper .reveal {
-  position: relative;
+.outer-wrapper .reveal {
   transform: translateY(150px);
   opacity: 0;
-  transition: 2s all ease;
+  transition: 0.8s all ease;
 }
-.outer-wrapper .inner-wrapper .reveal.active {
+.outer-wrapper .reveal.active {
   transform: translateY(0);
   opacity: 1;
 }/*# sourceMappingURL=styles.css.map */
