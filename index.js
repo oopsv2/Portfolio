@@ -1,27 +1,17 @@
-const sections = document.querySelectorAll("section");
-const nav = document.querySelector("nav");
-
-nav.addEventListener("click", function (e) {
-  e.preventDefault();
-  const link = e.target;
-  if (link.classList.contains("header--navigation__a")) {
-    const jumpTo = link.getAttribute("href");
-    document.querySelector(jumpTo).scrollIntoView();
+function reveal() {
+  var reveals = document.querySelectorAll(".reveal");
+  for (var i = 0; i < reveals.length; i++) {
+    var windowHeight = window.innerHeight;
+    var elementTop = reveals[i].getBoundingClientRect().top;
+    var elementVisible = 150;
+    if (elementTop < windowHeight - elementVisible) {
+      reveals[i].classList.add("active");
+    } else {
+      reveals[i].classList.remove("active");
+    }
   }
-});
+}
+window.addEventListener("scroll", reveal);
 
-const func = function (e, o) {
-  const [entry] = e;
-  if (!entry.isIntersecting) return;
-  entry.target.classList.remove("section__hidden");
-  o.unobserve(entry.target);
-};
-const effect = new IntersectionObserver(func, {
-  root: null,
-  threshold: 0.2,
-});
-
-sections.forEach((i) => {
-  effect.observe(i);
-  i.classList.add("section__hidden");
-});
+// To check the scroll position on page load
+reveal();
